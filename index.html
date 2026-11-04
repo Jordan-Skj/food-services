@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="110 Street : découvrez nos burgers, poulets grillés, brochettes et plats internationaux à Kinshasa.">
+    <meta name="theme-color" content="#1e1e1e">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+
+    <title>110 Street | Street Food. Goût international.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="accueil">
+        <div class="container nav-container">
+
+            <a href="#accueil" class="logo-placeholder" aria-label="110 Street - Accueil">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="btn btn-primary header-order" id="headerOrder">
+                Commander
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <span class="eyebrow">BIENVENUE CHEZ 110 STREET</span>
+
+                <h1>
+                    STREET FOOD. GOÛT
+                    <span>INTERNATIONAL.</span>
+                </h1>
+
+                <p>
+                    Burgers, poulet rôti, brochettes, crevettes et bien plus.
+                    Savourez chez nous ou faites-vous livrer 24h/24 et 7j/7.
+                </p>
+
+                <a href="#menu" class="btn btn-primary hero-button">
+                    Voir le menu
+                </a>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <!-- Emplacement vide pour le plat principal détouré -->
+                <div class="hero-image-placeholder">
+					<img src="./assets/images/hero-food.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU -->
+        <section class="menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">DÉCOUVREZ NOS SPÉCIALITÉS</span>
+
+                    <h2>Notre <span>menu</span></h2>
+
+                    <p>
+                        Des saveurs généreuses et des recettes préparées
+                        pour satisfaire toutes vos envies.
+                    </p>
+                </div>
+
+
+                <!-- Filtres -->
+                <div class="menu-filters" id="menuFilters">
+
+                    <button class="filter-btn active" data-category="all">Tous</button>
+
+                    <button class="filter-btn" data-category="burgers">Burgers</button>
+
+                    <button class="filter-btn" data-category="poulet">Poulet</button>
+
+                    <button class="filter-btn" data-category="grillades">Plats du monde</button>
+
+                    <button class="filter-btn" data-category="desserts">Desserts & boissons</button>
+
+                </div>
+
+
+                <!-- Produits -->
+                <div class="products-grid" id="productsGrid"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMMENT COMMANDER -->
+        <section class="ordering-section" id="commande">
+
+            <div class="container ordering-container">
+
+                <div class="ordering-visual">
+
+						<img src="./assets/images/delivery-illustration.png" alt="">
+
+
+                </div>
+
+
+                <div class="ordering-content">
+
+                    <span class="eyebrow">SIMPLE ET RAPIDE</span>
+
+                    <h2>Comment <span>commander ?</span></h2>
+
+                    <p class="ordering-subtitle">
+                        Trois étapes, et votre repas arrive chez vous.
+                    </p>
+
+
+                    <div class="steps">
+
+                        <article class="step">
+                            <span class="step-number">01</span>
+
+                            <div>
+                                <h3>Choisissez vos plats</h3>
+
+                                <p>
+                                    Parcourez le menu et ajoutez vos plats
+                                    préférés au panier.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="step step-featured">
+                            <span class="step-number">02</span>
+
+                            <div>
+                                <h3>Envoyez votre commande</h3>
+
+                                <p>
+                                    Indiquez votre nom et votre adresse,
+                                    puis envoyez votre commande sur WhatsApp
+                                    en un clic.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="step">
+                            <span class="step-number">03</span>
+
+                            <div>
+                                <h3>Savourez</h3>
+
+                                <p>
+                                    Notre livreur dépose votre repas à votre
+                                    porte, chaque jour et à toute heure.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                    <p class="ordering-help">
+                        Une question ?
+                        Appelez-nous au
+                        <a href="tel:+243900110110">+243 900 110 110</a>
+                        ou au
+                        <a href="tel:+243900205205">+243 900 205 205</a>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">RESTONS EN CONTACT</span>
+      <h2>Une envie de <span>street food ?</span></h2>
+      <p>
+        Une question, une commande ou simplement envie de nous rendre visite ?
+        Nous sommes disponibles pour vous.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Informations de contact -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <h3>Notre adresse</h3>
+            <p>Kinshasa, République démocratique du Congo</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <h3>Téléphone</h3>
+            <p>+243 000 000 000</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div>
+            <h3>WhatsApp</h3>
+            <p>Commandez directement depuis WhatsApp.</p>
+            <a href="https://wa.me/243000000000" target="_blank">
+              Nous contacter <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <h3>Horaires</h3>
+            <p>Lundi – Dimanche</p>
+            <p>10h00 – 22h00</p>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=Kinshasa%2C%20Democratic%20Republic%20of%20the%20Congo&output=embed"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Carte de localisation de 110 Street">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <a href="#accueil" class="footer-logo-placeholder">
+               <img src="./assets/images/logo.png" alt="">
+            </a>
+
+            <p>© 2026 110 Street. Tous droits réservés.</p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="TikTok">TikTok</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- FLOATING CART BUTTON -->
+    <button class="floating-cart" id="openCart" aria-label="Ouvrir mon panier">
+        <span>Mon panier</span>
+        <span class="cart-counter" id="cartCount">0</span>
+        <span class="cart-symbol">+</span>
+    </button>
+
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- CART DRAWER -->
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="drawer-header">
+
+            <div>
+                <span class="eyebrow">VOTRE SÉLECTION</span>
+                <h2>Mon panier <span id="drawerCount">(0)</span></h2>
+            </div>
+
+            <button class="close-button" id="closeCart" aria-label="Fermer">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+                <h3>Votre panier est vide.</h3>
+                <p>Ajoutez un plat pour commencer.</p>
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer" id="cartFooter">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+
+            <button class="btn btn-primary checkout-button" id="checkoutBtn">
+                Passer ma commande
+            </button>
+
+            <button class="clear-cart" id="clearCart">
+                Vider le panier
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-overlay" id="checkoutModal">
+
+        <div class="checkout-modal">
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="eyebrow">DERNIÈRE ÉTAPE</span>
+                    <h2>Votre commande</h2>
+                </div>
+
+                <button class="close-button" id="closeModal" aria-label="Fermer">
+                    ×
+                </button>
+
+            </div>
+
+
+            <p class="modal-description">
+                Renseignez vos coordonnées pour envoyer votre commande
+                directement sur WhatsApp.
+            </p>
+
+
+            <form id="checkoutForm">
+
+                <label for="customerName">Votre nom</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Ex. : Jean"
+                    required
+                >
+
+                <label for="customerPhone">Votre téléphone</label>
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="+243 ..."
+                    required
+                >
+
+                <label for="customerAddress">Votre adresse de livraison</label>
+                <textarea
+                    id="customerAddress"
+                    rows="3"
+                    placeholder="Commune, quartier, avenue..."
+                    required
+                ></textarea>
+
+                <label for="customerNote">Instructions supplémentaires (facultatif)</label>
+                <textarea
+                    id="customerNote"
+                    rows="2"
+                    placeholder="Informations utiles pour la livraison..."
+                ></textarea>
+
+                <p class="form-error" id="formError" role="alert"></p>
+
+                <button type="submit" class="btn btn-primary submit-order">
+                    Envoyer ma commande sur WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>
