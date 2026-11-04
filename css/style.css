@@ -11,8 +11,8 @@
     --yellow: #ffcc32;
     --white: #ffffff;
     --muted: #aaa69e;
-    --font-body: "DM Sans", sans-serif;
-    --font-heading: "Barlow Condensed", sans-serif;
+    --font-body: "Poppins", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
     --container: 1180px;
 }
 
@@ -999,7 +999,8 @@ section {
     }
 
     .hero {
-        min-height: 570px;
+        min-height: 0;
+        padding-bottom: 20px;
     }
 
     .hero-content {
@@ -1016,9 +1017,14 @@ section {
     }
 
     .hero-visual {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
         width: 270px;
         height: 270px;
-        bottom: -80px;
+        margin-top: 28px;
+        z-index: 1;
     }
 
     .menu-section {
@@ -1091,7 +1097,7 @@ section {
     }
 
     .hero {
-        min-height: 540px;
+        min-height: 0;
     }
 
     .hero h1 {
